@@ -1,0 +1,39 @@
+
+A PRODUCT DATA MODEL: RECORD ALBUM:
+db.recordalbum.insert(
+{ 
+ "_id" : ObjectId("577c7870dacd5ae163f162e5"), 
+ "sku" : "00456", 
+ "type" : "Audi Album", 
+ "title" : "A Love Supreme", 
+ "description" : "by John Clotrane", 
+ "asin" : "800000A118M", 
+ "shipping" : {
+ "weight" : 6.0, 
+ "dimension" : {
+ "width" : 10.0, 
+ "height" : 10.0, 
+ "depth" : 1.0
+ }
+ }, 
+ "pricing" : {
+ "list" : 1200.0, 
+ "retail" : 1100.0, 
+ "savings" : 100.0, 
+ "pct_savings" : 8.0
+ }, 
+ "details" : {
+ "title" : " A Love Supreme [Original Recording Reissued]", 
+ "artist" : "John Coltrane", 
+ "genre" : [
+ "Jazz", 
+ "General"
+ ], 
+ "tracks" : [
+ "A Love Supreme, Part I: Acknowledgment", 
+ "A Love Supreme, Part II: Resolution", 
+ "A Love Supreme, Part III: Pursuance", 
+ "A Love Supreme, Part iV: Plasm"
+ ]
+ }
+});
