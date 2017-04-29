@@ -1,0 +1,34 @@
+walls
+{  
+"_id":ObjectId("577d973b7588fe159cd2ed84"),
+"user_id":"T11111BC","month":"201412",
+"posts":[
+{
+ "id":ObjectId("577d8c0c7588fe159cd2ed7e"),"ts":ISODate("2016-07-03"),
+ "by":{"id":"T4Y30245AE","name":"Max"},
+ "circles":["*public*"],
+ "type":"status",
+ "detail":{"text":"Loving MongoDB"},
+ "comments_shown":NumberInt(3),
+ "comments":[
+{"by":{"id":"T4Y30245AE","name":"Max"},"ts":ISODate("2015-02-"),"text":"Likeit"},
+{"by":{"id":"T4Y98564AF","name":"Bernie"},"ts":ISODate("2015-03-15"),"text":"Youknow"},
+{"by":{"id":"T4Y3689AH","name":"Paul"},"ts":ISODate("2015-04-01"),"text":"Agree"}
+       ]
+},
+{
+ "id":ObjectId("577d8c0c7588fe159cd2ed8e"),"ts":ISODate("2016-07-06"),
+ "by":{"id":"T4Y30245AE","name":"Max"},
+ "circles":["*public*"],
+ "type":"status",
+ "detail": {"text":" Loving Python"},
+ "comments_shown":NumberInt(3),
+ "comments":[
+     {"by":{"id":"T4Y30245AE","name":"Max"},"ts":ISODate("2015-02-01"), "text":"Vacations?"},
+     {"by":{"id":"T4Y98564AF","name":"Bernie"},"ts":ISODate("2015-03015"),"text":"See you"},
+     {"by":{"id":"T4Y3689AH","name":"Paul"},"ts":ISODate("2015-04-01"),"text":"Fasitivty"}
+      ]
+}
+]
+}
+ 
