@@ -1,0 +1,38 @@
+A SOCIAL NETWORK DATA MODEL:
+users:
+{ 
+ "_id" : "T4Y2345AC", "name" : "Rick", 
+ "profile" : { "age" : NumberInt(23), "location" : "Chicago", "intrest" : "Table Tenis" }, 
+ "followers" : { 
+ "T4Y234567AC" : { "name" : "Jared", "circle" : [ "Python", "Author" ] }, 
+ "T4Y234697AJ" : { "name" : "Bernie", "circle" : [ "Python" ] }, 
+ "T4Y234856AB" : { "name" : "Jared", "circle" : [ "Python", "Speaker" ] } }, 
+ "circles" : {
+ 	"10gen" : { 
+"T4Y05678AD" : { "name" : "Jared", "Age" : NumberInt(24) }, 
+"T4Y30245AE" : { "name" : "Max", "Age" : NumberInt(34) }, 
+"T4Y98564AF" : { "name" : "Bernie", "Age" : NumberInt(14) }, 
+"T4Y3689AH" : { "name" : "Paul", "Age" : NumberInt(20)}
+ 	}
+ }, 
+  "blocked" : { 
+"GH1056578e" : { "name" : "John", "circle" : [ "Fiction", "Author" ] }, 
+"JN1058880n" : { "name" : "James", "circle" : [ "NonFiction", "Author" ] }, 
+"LM1056990d" : { "name" : "Rex", "circle" : [ "Children's books", "Author" ] }
+  }
+}
+posts
+{ 
+ "_id" : ObjectId("577d8c0c7588fe159cd2ed7e"), 
+ "by" : { "id" : "T11111BC", "name" : "Rick" }, 
+ "circles" : [ "10gen", "11gen" ], 
+ "type" : "Status", 
+ "ts" : ISODate("2016-07-06"), 
+ "details" : { "test" : "Loving MondgoDB", "icon" : "Thmbsup" }, 
+ "comments" : [ 
+       {"by":{ "id":"T4Y05678AD","name":"Jared"},"ts":ISODate("2015-01-10"),"text":"Right on"}, 
+       {"by":{"id":"T4Y30245AE","name":"Max"},"ts":ISODate("2015-02-11"),"text":"Liekit"},
+       {"by":{"id":"T4Y98564AF","name":"Bernie"},"ts":ISODate("2015-03-15"), "text":"You know" }, 
+       {"by":{"id":"T4Y3689AH", "name" : "Paul" }, "ts":ISODate("2015-04-01"), "text" : "Agree" } 
+ ] 
+} 
